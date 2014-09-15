@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AB72C941949161500534699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB72C931949161500534699 /* Foundation.framework */; };
+		5AB72C961949161500534699 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB72C951949161500534699 /* CoreGraphics.framework */; };
+		5AB72C981949161500534699 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB72C971949161500534699 /* UIKit.framework */; };
+		5AB72C9E1949161500534699 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72C9C1949161500534699 /* InfoPlist.strings */; };
+		5AB72CA01949161500534699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72C9F1949161500534699 /* main.m */; };
+		5AB72CA41949161500534699 /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72CA31949161500534699 /* CLAppDelegate.m */; };
+		5AB72CA71949161500534699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72CA51949161500534699 /* Main.storyboard */; };
+		5AB72CAF1949161500534699 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72CAE1949161500534699 /* Images.xcassets */; };
+		5AB72CD11949173D00534699 /* CLBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72CD01949173D00534699 /* CLBoardView.m */; };
+		5AB72CD41949175E00534699 /* CLGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72CD31949175E00534699 /* CLGameViewController.m */; };
+		5AB72CD719491D3300534699 /* CLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72CD619491D3300534699 /* CLBoard.m */; };
+		5AB72CDA194926F400534699 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AB72CD9194926F400534699 /* Localizable.strings */; };
+		5AB72CDD1949346B00534699 /* CLMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB72CDC1949346B00534699 /* CLMove.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5AB72C901949161500534699 /* Checkers Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkers Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB72C931949161500534699 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5AB72C951949161500534699 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5AB72C971949161500534699 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5AB72C9B1949161500534699 /* Checkers Lite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Checkers Lite-Info.plist"; sourceTree = "<group>"; };
+		5AB72C9D1949161500534699 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AB72C9F1949161500534699 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AB72CA11949161500534699 /* Checkers Lite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Checkers Lite-Prefix.pch"; sourceTree = "<group>"; };
+		5AB72CA21949161500534699 /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		5AB72CA31949161500534699 /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		5AB72CA61949161500534699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AB72CAE1949161500534699 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5AB72CB51949161600534699 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5AB72CCF1949173D00534699 /* CLBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLBoardView.h; path = Views/CLBoardView.h; sourceTree = "<group>"; };
+		5AB72CD01949173D00534699 /* CLBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLBoardView.m; path = Views/CLBoardView.m; sourceTree = "<group>"; };
+		5AB72CD21949175E00534699 /* CLGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLGameViewController.h; path = Controllers/CLGameViewController.h; sourceTree = "<group>"; };
+		5AB72CD31949175E00534699 /* CLGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLGameViewController.m; path = Controllers/CLGameViewController.m; sourceTree = "<group>"; };
+		5AB72CD519491D3300534699 /* CLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLBoard.h; path = Models/CLBoard.h; sourceTree = "<group>"; };
+		5AB72CD619491D3300534699 /* CLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLBoard.m; path = Models/CLBoard.m; sourceTree = "<group>"; };
+		5AB72CD819491E8400534699 /* CLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLConstants.h; sourceTree = "<group>"; };
+		5AB72CD9194926F400534699 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5AB72CDB1949346B00534699 /* CLMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLMove.h; path = Models/CLMove.h; sourceTree = "<group>"; };
+		5AB72CDC1949346B00534699 /* CLMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLMove.m; path = Models/CLMove.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AB72C8D1949161500534699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB72C961949161500534699 /* CoreGraphics.framework in Frameworks */,
+				5AB72C981949161500534699 /* UIKit.framework in Frameworks */,
+				5AB72C941949161500534699 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AB72C871949161500534699 = {
+			isa = PBXGroup;
+			children = (
+				5AB72C991949161500534699 /* Checkers Lite */,
+				5AB72C921949161500534699 /* Frameworks */,
+				5AB72C911949161500534699 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AB72C911949161500534699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72C901949161500534699 /* Checkers Lite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AB72C921949161500534699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72C931949161500534699 /* Foundation.framework */,
+				5AB72C951949161500534699 /* CoreGraphics.framework */,
+				5AB72C971949161500534699 /* UIKit.framework */,
+				5AB72CB51949161600534699 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AB72C991949161500534699 /* Checkers Lite */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72CCB1949161F00534699 /* Controllers */,
+				5AB72CCC1949162400534699 /* Models */,
+				5AB72CCD1949162B00534699 /* Views */,
+				5AB72CCE1949163100534699 /* Resources */,
+				5AB72CD819491E8400534699 /* CLConstants.h */,
+				5AB72CA21949161500534699 /* CLAppDelegate.h */,
+				5AB72CA31949161500534699 /* CLAppDelegate.m */,
+				5AB72C9F1949161500534699 /* main.m */,
+				5AB72CA11949161500534699 /* Checkers Lite-Prefix.pch */,
+				5AB72C9A1949161500534699 /* Supporting Files */,
+			);
+			path = "Checkers Lite";
+			sourceTree = "<group>";
+		};
+		5AB72C9A1949161500534699 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AB72CCB1949161F00534699 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72CD21949175E00534699 /* CLGameViewController.h */,
+				5AB72CD31949175E00534699 /* CLGameViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5AB72CCC1949162400534699 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72CD519491D3300534699 /* CLBoard.h */,
+				5AB72CD619491D3300534699 /* CLBoard.m */,
+				5AB72CDB1949346B00534699 /* CLMove.h */,
+				5AB72CDC1949346B00534699 /* CLMove.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5AB72CCD1949162B00534699 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72CCF1949173D00534699 /* CLBoardView.h */,
+				5AB72CD01949173D00534699 /* CLBoardView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5AB72CCE1949163100534699 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AB72CAE1949161500534699 /* Images.xcassets */,
+				5AB72CA51949161500534699 /* Main.storyboard */,
+				5AB72C9B1949161500534699 /* Checkers Lite-Info.plist */,
+				5AB72C9C1949161500534699 /* InfoPlist.strings */,
+				5AB72CD9194926F400534699 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AB72C8F1949161500534699 /* Checkers Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB72CC51949161600534699 /* Build configuration list for PBXNativeTarget "Checkers Lite" */;
+			buildPhases = (
+				5AB72C8C1949161500534699 /* Sources */,
+				5AB72C8D1949161500534699 /* Frameworks */,
+				5AB72C8E1949161500534699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Checkers Lite";
+			productName = "Checkers Lite";
+			productReference = 5AB72C901949161500534699 /* Checkers Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AB72C881949161500534699 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steven Mattera";
+			};
+			buildConfigurationList = 5AB72C8B1949161500534699 /* Build configuration list for PBXProject "Checkers Lite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AB72C871949161500534699;
+			productRefGroup = 5AB72C911949161500534699 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AB72C8F1949161500534699 /* Checkers Lite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AB72C8E1949161500534699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB72CAF1949161500534699 /* Images.xcassets in Resources */,
+				5AB72CDA194926F400534699 /* Localizable.strings in Resources */,
+				5AB72CA71949161500534699 /* Main.storyboard in Resources */,
+				5AB72C9E1949161500534699 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AB72C8C1949161500534699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB72CA01949161500534699 /* main.m in Sources */,
+				5AB72CDD1949346B00534699 /* CLMove.m in Sources */,
+				5AB72CD719491D3300534699 /* CLBoard.m in Sources */,
+				5AB72CD41949175E00534699 /* CLGameViewController.m in Sources */,
+				5AB72CA41949161500534699 /* CLAppDelegate.m in Sources */,
+				5AB72CD11949173D00534699 /* CLBoardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5AB72C9C1949161500534699 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AB72C9D1949161500534699 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5AB72CA51949161500534699 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AB72CA61949161500534699 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AB72CC31949161600534699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AB72CC41949161600534699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AB72CC61949161600534699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Checkers Lite/Checkers Lite-Prefix.pch";
+				INFOPLIST_FILE = "Checkers Lite/Checkers Lite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5AB72CC71949161600534699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Checkers Lite/Checkers Lite-Prefix.pch";
+				INFOPLIST_FILE = "Checkers Lite/Checkers Lite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AB72C8B1949161500534699 /* Build configuration list for PBXProject "Checkers Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB72CC31949161600534699 /* Debug */,
+				5AB72CC41949161600534699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB72CC51949161600534699 /* Build configuration list for PBXNativeTarget "Checkers Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB72CC61949161600534699 /* Debug */,
+				5AB72CC71949161600534699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AB72C881949161500534699 /* Project object */;
+}

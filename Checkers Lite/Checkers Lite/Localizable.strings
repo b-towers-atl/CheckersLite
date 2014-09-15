@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  Checkers Lite
+
+  Created by Steven Mattera on 6/11/14.
+  Copyright (c) 2014 Steven Mattera. All rights reserved.
+*/
+
+"AppName" = "Checkers Lite";
+
+"Player1" = "Player One";
+"Player2" = "Player Two";
+
+"p1" = "P1: %d";
+"p2" = "P2: %d";
+
+"SelectTile" = "First choose a piece to move.";
+"Ok" = "OK";
+
+"Restart" = "Are you sure you want to restart the game?";
+"Yes" = "Yes";
+"No" = "No";
+
+"GameOver" = "Game Over";
+"P1Wins" = "Player 1 Wins!";
+"P2Wins" = "Player 2 Wins!";
+"Draw" = "Draw";
+"NewGame" = "New Game";

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Checkers_Lite_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nR2-un-kkW">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0j-kb-mJZ" customClass="BoardView" customModule="Checkers_Lite_Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N0j-kb-mJZ" secondAttribute="height" multiplier="1:1" id="KMX-ob-8Wn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="4hD-Q6-efJ">
+                                <rect key="frame" x="0.0" y="20" width="480" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUX-8n-6cI">
+                                <rect key="frame" x="0.0" y="-21" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eMF-9p-d3H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8j-wH-Heh">
+                                <rect key="frame" x="240" y="-21" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xSg-sm-zNl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b3-ub-FeD">
+                                <rect key="frame" x="0.0" y="524" width="480" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cbq-l3-fZY"/>
+                                </constraints>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="596" width="480" height="44"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="524" width="640" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="restartGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAX-h5-nqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N0j-kb-mJZ" firstAttribute="top" secondItem="Z8j-wH-Heh" secondAttribute="bottom" id="3V4-t6-EEj"/>
+                            <constraint firstItem="Z8j-wH-Heh" firstAttribute="top" secondItem="4hD-Q6-efJ" secondAttribute="bottom" constant="8" id="3wD-ob-DNC"/>
+                            <constraint firstItem="4hD-Q6-efJ" firstAttribute="leading" secondItem="nR2-un-kkW" secondAttribute="leading" id="9if-Zz-ocb"/>
+                            <constraint firstItem="Z8j-wH-Heh" firstAttribute="width" secondItem="IUX-8n-6cI" secondAttribute="width" id="ABX-tk-uv5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1b3-ub-FeD" secondAttribute="bottom" id="BE2-ak-zwC"/>
+                            <constraint firstAttribute="centerY" secondItem="N0j-kb-mJZ" secondAttribute="centerY" id="Jwu-50-31B"/>
+                            <constraint firstItem="IUX-8n-6cI" firstAttribute="leading" secondItem="nR2-un-kkW" secondAttribute="leading" id="SQt-ty-hr6"/>
+                            <constraint firstItem="4hD-Q6-efJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wsr-GW-dcY"/>
+                            <constraint firstAttribute="trailing" secondItem="N0j-kb-mJZ" secondAttribute="trailing" id="WxE-T6-Jrh"/>
+                            <constraint firstAttribute="centerX" secondItem="N0j-kb-mJZ" secondAttribute="centerX" id="erS-dC-sWt"/>
+                            <constraint firstItem="N0j-kb-mJZ" firstAttribute="top" secondItem="IUX-8n-6cI" secondAttribute="bottom" id="gaT-mz-vug"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8j-wH-Heh" secondAttribute="trailing" id="l1s-cu-Ez4"/>
+                            <constraint firstItem="1b3-ub-FeD" firstAttribute="leading" secondItem="nR2-un-kkW" secondAttribute="leading" id="mAJ-Hd-N5w"/>
+                            <constraint firstAttribute="trailing" secondItem="4hD-Q6-efJ" secondAttribute="trailing" id="sOp-RV-htz"/>
+                            <constraint firstItem="N0j-kb-mJZ" firstAttribute="leading" secondItem="nR2-un-kkW" secondAttribute="leading" id="vev-hz-yRZ"/>
+                            <constraint firstItem="Z8j-wH-Heh" firstAttribute="leading" secondItem="IUX-8n-6cI" secondAttribute="trailing" id="wwa-jD-4mU"/>
+                            <constraint firstAttribute="trailing" secondItem="1b3-ub-FeD" secondAttribute="trailing" id="y4U-C3-1L7"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Wsr-GW-dcY"/>
+                                <exclude reference="BE2-ak-zwC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Wsr-GW-dcY"/>
+                                <include reference="BE2-ak-zwC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="boardView" destination="N0j-kb-mJZ" id="fRN-d2-VVy"/>
+                        <outlet property="currentPlayerLabel" destination="4hD-Q6-efJ" id="6U7-pE-XoR"/>
+                        <outlet property="playerOneLabel" destination="IUX-8n-6cI" id="Oao-RC-fdd"/>
+                        <outlet property="playerTwoLabel" destination="Z8j-wH-Heh" id="RUq-cG-Nm1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="220.5"/>
+        </scene>
+    </scenes>
+</document>
